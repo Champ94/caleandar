@@ -1,59 +1,60 @@
-######v0.0.1
-#Caleandar 
-Let me keep the intro brief. It's a lightweight (about `7.5kb` minified at the time of writing) and library-independent calendar script with optional themes. You can add events to the calendar and add functionality on click of the event. That's about the jist of it. Continue reading for instructions on how to use and examples.
+# Caleandar Version 0.9 
+Lightweight and library-independent calendar script with optional themes.
 
-###Installing
-Simply download the caleandar.js file and any of the css themes you'd like. Then include a reference to the file(s) in your html:
-```
-<script type="text/javascript" src="js/caleandar.min.js"></script>
-```
-plus any of the following optional css files
-```
-<link rel="stylesheet" href="css/theme1.css"/>
-<link rel="stylesheet" href="css/theme2.css"/>
-<link rel="stylesheet" href="css/theme3.css"/>
-```
+Full guide and setup at https://github.com/jujumuncher/caleandar
 
-###Instantiating
-At it's simplest, call the `calendar()` function with the following 3 optional parametars:
+### Features
+
+Original features:
+- Add events to the calendar
+- Handles event click
+
+New features:
+- Actual day is now highlighted in previous and following months if present between disabled days
+- You can now add multiple events on the same day
+- Link and anonymous funcions enabled for different events in the same day
+- Monday is now the first day of the week
+- Days and months changed in italian language
+
+### Installing
+Download the .js files and any of the themes and include them in your page.
+
+### Instantiating
+Call the `calendar()` function with the following 3 optional parameters:
 ```
 caleandar(element, events, settings);
 ```
-Where `element` is an HTML element, `events` is an array of event objects and `settings` is an object of settings. Pretty straightforward so far.
+Where `element` is an HTML element, `events` is an array of event objects and `settings` is an object of settings.
 
-####Element
-A single HTML element.
-######Examples:
-`var element = caleandar(document.querySelector('#foo'));`
 
-`var element = caleandar(document.getElementById('foo'));`
-
-`var element = caleandar(document.getElementsByClassName('bar')[0]);`
-
-or if you are using jQuery:
-`var element = caleandar($('#foo'));`
-
-####Events
+### Events
 An array of event objects to be placed on their respective dates on the calendar.
-######Examples:
-Using Simple links for events:
+Example with multiple events on the same day.
 ```
 var events = [
-  {'Date': new Date(2016, 6, 1), 'Title': 'Doctor appointment at 3:25pm.'},
-  {'Date': new Date(2016, 6, 7), 'Title': 'New Garfield movie comes out!', 'Link': 'https://garfield.com'},
-  {'Date': new Date(2016, 6, 11), 'Title': '25 year anniversary', 'Link': 'https://www.google.com.au/#q=anniversary+gifts'},
-];
-```
-Using anonymous functions to instantiate on click:
-```
-var events = [
-  {'Date': new Date(2016, 6, 1), 'Title': 'Doctor appointment at 3:25pm.', 'Link': function(){console.log('Reminder!');}},
-  {'Date': new Date(2016, 6, 7), 'Title': 'New Garfield movie comes out!', 'Link': function(){alert("Better not miss the movie!");}},
-  {'Date': new Date(2016, 6, 11), 'Title': '25 year anniversary', 'Link': function(){console.debug(document.getElementById('foo'));}},
+    {
+        'Date': new Date(2018, 1, 7), 
+        'Title': ['Evento1', 'Evento2', 'Evento3'], 
+        Link: [
+            '#linkEvento1', 
+            '#linkEvento2',
+            '#linkEvento3'
+        ]
+    },
+    {
+        'Date': new Date(2018, 1, 14), 
+        'Title': ['Evento1', 'Evento2'], 
+        Link: [
+            '#linkEvento1', 
+            function() {
+                alert("Click on Evento2!");
+            },
+        ]
+    }
 ];
 ```
 
-####Settings
+### Settings
 Below are all the possible settings attributes with example values.
 ```
 var settings={
@@ -71,22 +72,3 @@ var settings={
     ModelChange: model            //(array of objects) new data object to pass into calendar (serving suggestion: passing through only the currently selected month's events if working with large dataset.
   }
 ```
-
-###CSS Themes
-#####Theme 1
-```
-<link rel="stylesheet" href="css/theme1.css"/>
-```
-![theme1.css](http://i.imgur.com/MoBMUEa.png)
-
-#####Theme 2
-```
-<link rel="stylesheet" href="css/theme2.css"/>
-```
-![theme2.css](http://i.imgur.com/6l7VSIL.png)
-
-#####Theme 3
-```
-<link rel="stylesheet" href="css/theme3.css"/>
-```
-![theme3.css](http://i.imgur.com/fsNXVwc.png)
