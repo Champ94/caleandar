@@ -20,7 +20,7 @@ New features:
 Download the .js files and any of the themes and include them in your page.
 
 ### Instantiating
-Call the `calendar()` function with the following 3 optional parameters:
+Call the `caleandar()` function with the following 3 optional parameters:
 ```
 caleandar(element, events, settings);
 ```
