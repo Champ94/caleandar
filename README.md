@@ -57,7 +57,7 @@ var events = [
 ### Settings
 Below are all the possible settings attributes with example values.
 ```
-var settings={
+var settings = {
     Color: '#999',                //(string - color) font color of whole calendar.
     LinkColor: '#333',            //(string - color) font color of event titles.
     NavShow: true,                //(bool) show navigation arrows.
@@ -70,5 +70,5 @@ var settings={
     EventTargetWholeDay: false,   //(bool) clicking on the whole date will trigger event action, as opposed to just clicking on the title.
     DisabledDays: [],             //(array of numbers) days of the week to be slightly transparent. ie: [1,6] to fade Sunday and Saturday.
     ModelChange: model            //(array of objects) new data object to pass into calendar (serving suggestion: passing through only the currently selected month's events if working with large dataset.
-  }
+}
 ```
