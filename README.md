@@ -10,7 +10,7 @@ Original features:
 - Handles event click
 
 New features:
-- Actual day is now highlighted in previous and following months if present between disabled days
+- Actual day is now highlighted in previous and following months if visible between disabled days
 - You can now add multiple events on the same day
 - Link and anonymous funcions enabled for different events in the same day
 - Monday is now the first day of the week
