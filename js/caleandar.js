@@ -69,7 +69,7 @@ function createCalendar(calendar, element, adjuster) {
             typeof calendar.Options[key] != 'function' && typeof calendar.Options[key] != 'object' && calendar.Options[key]?element.className += " " + key + "-" + calendar.Options[key] : 0;
         }
     }
-    var months = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
+    var months = ["GENNAIO", "FEBBRAIO", "MARZO", "APRILE", "MAGGIO", "GNUGNO", "LUGLIO", "AGOSTO", "SETTEMBRE", "OTTOBRE", "NOVEMBRE", "DICEMBRE"];
 
     function AddSidebar() {
         var sidebar = document.createElement('div');
@@ -83,8 +83,12 @@ function createCalendar(calendar, element, adjuster) {
             x.className += 'cld-month';
             var n = i - (4 - calendar.Selected.Month);
             // Account for overflowing month values
-            if(n<0){n+=12;}
-            else if(n>11){n-=12;}
+            if (n < 0) {
+                n += 12;
+            }
+            else if (n > 11) {
+                n -= 12;
+            }
             // Add Appropriate Class
             if (i == 0) {
                 x.className += ' cld-rwd cld-nav';
@@ -130,7 +134,7 @@ function createCalendar(calendar, element, adjuster) {
             } else {
                 if (i < 4) {
                     x.className += ' cld-pre';
-                } else if(i > 4) {
+                } else if (i > 4) {
                     x.className += ' cld-post';
                 } else {
                     x.className += ' cld-curr';
@@ -200,7 +204,7 @@ function createCalendar(calendar, element, adjuster) {
         }
         var today = document.createElement('div');
         today.className += ' today';
-        today.innerHTML = months[calendar.Selected.Month] + ", " + calendar.Selected.Year;
+        today.innerHTML = months[calendar.Selected.Month] + " " + calendar.Selected.Year;
         datetime.appendChild(today);
         if (calendar.Options.NavShow && !calendar.Options.NavVertical) {
             var fwd = document.createElement('div');
@@ -361,7 +365,7 @@ function createCalendar(calendar, element, adjuster) {
             days.appendChild(day);
         }
         // Next Month's Days
-        // Always same amount of days in calander
+        // Always same amount of days in calendar
         var extraDays = 13;
         if (days.children.length > 35) {
             extraDays = 6;

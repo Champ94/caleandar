@@ -23,7 +23,8 @@
     margin: auto;
     text-align: center;
     color: #ffffff;
-    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: 900;
     font-size: 16px;
     top: 50%;
     transform: translateY(-50%);
@@ -61,6 +62,7 @@
     font-size: 14px;
     padding-left: 0;
     height: 60px;
+    font-weight: 500;
 }
 
 .cld-days {
@@ -122,12 +124,13 @@
     z-index: 5;
     display: none;
     top: 0;
-    left: 45px;
+    left: 60px;
     padding: 5px 10px;
     background: #fff;
     white-space: nowrap;
     border: 1px solid darkgrey;
     font-size: 14px;
+    width: 220px;
 }
 
 .cld-number:hover .cld-title {
@@ -149,13 +152,22 @@
 .cld-title a {
     color: #005DAA;
     display: block;
-    line-height: 30px;
+    line-height: 35px;
+    font-size: 15px;
 }
 
 .cld-number.eventday {
     display: inline-block;
     height: 45px;
     width: 45px;
+}
+
+.cld-number.eventday:active {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #005DAA;
 }
 
 .cld-number.eventday::after {
@@ -165,7 +177,7 @@
     border-radius: 50%;
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     right: calc(50% - 3px);
 }
 
@@ -174,5 +186,5 @@
 }
 
 .today .cld-number.eventday:hover {
-    background: #888;
+
 }
