@@ -1,5 +1,6 @@
-body{
-  font-family: Calibri, sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #333;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
