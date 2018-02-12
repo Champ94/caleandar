@@ -45,7 +45,7 @@
 
 .cld-rwd {
     float: left;
-    left: 10px;
+    margin-left: 10px;
 }
 
 .cld-fwd {

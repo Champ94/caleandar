@@ -92,14 +92,41 @@ function createCalendar(calendar, element, adjuster) {
                     typeof calendar.Options.ModelChange == 'function' ? calendar.Model = calendar.Options.ModelChange() : calendar.Model = calendar.Options.ModelChange;
                     createCalendar(calendar, element, -1);
                 });
-                x.innerHTML += '<svg height="15" width="15" viewBox="0 0 100 75" fill="rgba(255,255,255,0.5)"><polyline points="0,75 100,75 50,0"></polyline></svg>';
+                x.innerHTML += '<svg height="15px" width="15px" class="nav-style" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+                    '\t viewBox="0 0 375.1 650.6" style="enable-background:new 0 0 375.1 650.6;" xml:space="preserve">\n' +
+                    '<style type="text/css">\n' +
+                    '\t.st0{display:none;}\n' +
+                    '\t.st1{fill:#FFFFFF;}\n' +
+                    '\t.nav-style{transform:rotate(180deg);}\n' +
+                    '</style>\n' +
+                    '<g id="Livello_1_1_" class="st0">\n' +
+                    '</g>\n' +
+                    '<g id="Livello_3">\n' +
+                    '</g>\n' +
+                    '<g id="Livello_2_1_">\n' +
+                    '\t<polygon class="st1" points="45.1,650.6 0,605.5 284.9,320.6 9.4,45.1 54.5,0 375.1,320.6 \t"/>\n' +
+                    '</g>\n' +
+                    '</svg>\n';
             } else if (i == months.length - 4) {
                 x.className += ' cld-fwd cld-nav';
                 x.addEventListener('click', function() {
                     typeof calendar.Options.ModelChange == 'function' ? calendar.Model = calendar.Options.ModelChange() : calendar.Model = calendar.Options.ModelChange;
                     createCalendar(calendar, element, 1);
                 });
-                x.innerHTML += '<svg height="15" width="15" viewBox="0 0 100 75" fill="rgba(255,255,255,0.5)"><polyline points="0,0 100,0 50,75"></polyline></svg>';
+                x.innerHTML += '<svg height="15px" width="15px" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+                    '\t viewBox="0 0 375.1 650.6" style="enable-background:new 0 0 375.1 650.6;" xml:space="preserve">\n' +
+                    '<style type="text/css">\n' +
+                    '\t.st0{display:none;}\n' +
+                    '\t.st1{fill:#FFFFFF;}\n' +
+                    '</style>\n' +
+                    '<g id="Livello_1_1_" class="st0">\n' +
+                    '</g>\n' +
+                    '<g id="Livello_3">\n' +
+                    '</g>\n' +
+                    '<g id="Livello_2_1_">\n' +
+                    '\t<polygon class="st1" points="45.1,650.6 0,605.5 284.9,320.6 9.4,45.1 54.5,0 375.1,320.6 \t"/>\n' +
+                    '</g>\n' +
+                    '</svg>\n';
             } else {
                 if (i < 4) {
                     x.className += ' cld-pre';
@@ -154,7 +181,21 @@ function createCalendar(calendar, element, adjuster) {
             rwd.addEventListener('click', function() {
                 createCalendar(calendar, element, -1);
             });
-            rwd.innerHTML = '<svg height="15" width="15" viewBox="0 0 75 100" fill="rgba(0,0,0,0.5)"><polyline points="0,50 75,0 75,100"></polyline></svg>';
+            rwd.innerHTML = '<svg height="15px" width="15px" class="nav-style" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+                '\t viewBox="0 0 375.1 650.6" style="enable-background:new 0 0 375.1 650.6;" xml:space="preserve">\n' +
+                '<style type="text/css">\n' +
+                '\t.st0{display:none;}\n' +
+                '\t.st1{fill:#FFFFFF;}\n' +
+                '\t.nav-style{transform:rotate(180deg);}\n' +
+                '</style>\n' +
+                '<g id="Livello_1_1_" class="st0">\n' +
+                '</g>\n' +
+                '<g id="Livello_3">\n' +
+                '</g>\n' +
+                '<g id="Livello_2_1_">\n' +
+                '\t<polygon class="st1" points="45.1,650.6 0,605.5 284.9,320.6 9.4,45.1 54.5,0 375.1,320.6 \t"/>\n' +
+                '</g>\n' +
+                '</svg>';
             datetime.appendChild(rwd);
         }
         var today = document.createElement('div');
@@ -167,7 +208,20 @@ function createCalendar(calendar, element, adjuster) {
             fwd.addEventListener('click', function() {
                 createCalendar(calendar, element, 1);
             });
-            fwd.innerHTML = '<svg height="15" width="15" viewBox="0 0 75 100" fill="rgba(0,0,0,0.5)"><polyline points="0,0 75,50 0,100"></polyline></svg>';
+            fwd.innerHTML = '<svg height="15px" width="15px" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+                '\t viewBox="0 0 375.1 650.6" style="enable-background:new 0 0 375.1 650.6;" xml:space="preserve">\n' +
+                '<style type="text/css">\n' +
+                '\t.st0{display:none;}\n' +
+                '\t.st1{fill:#FFFFFF;}\n' +
+                '</style>\n' +
+                '<g id="Livello_1_1_" class="st0">\n' +
+                '</g>\n' +
+                '<g id="Livello_3">\n' +
+                '</g>\n' +
+                '<g id="Livello_2_1_">\n' +
+                '\t<polygon class="st1" points="45.1,650.6 0,605.5 284.9,320.6 9.4,45.1 54.5,0 375.1,320.6 \t"/>\n' +
+                '</g>\n' +
+                '</svg>';
             datetime.appendChild(fwd);
         }
         if (calendar.Options.DatetimeLocation) {

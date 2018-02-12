@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello</title>
+    <title>Caleandar demo with custom style</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/caleandar-theme.css"/>
   </head>
   <body>
@@ -12,6 +12,32 @@
     </div>
 
     <script type="text/javascript" src="js/caleandar.js"></script>
-    <script type="text/javascript" src="js/demo.js"></script>
+    <script>
+        var events = [
+            {
+                'Date': new Date(2018, 1, 7),
+                'Title': ['Evento1', 'Evento2', 'Evento3'],
+                Link: [
+                    '#linkEvento1',
+                    '#linkEvento2',
+                    '#linkEvento3'
+                ]
+            },
+            {
+                'Date': new Date(2018, 1, 14),
+                'Title': ['Evento1', 'Evento2'],
+                Link: [
+                    '#linkEvento1',
+                    function() {
+                        alert("Click on Evento2!");
+                    },
+                ]
+            }
+        ];
+
+        var settings = {};
+        var element = document.getElementById('caleandar');
+        caleandar(element, events, settings);
+    </script>
   </body>
 </html>
