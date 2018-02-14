@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd166a4e-0ecf-4454-ba79-4ce796f91173" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/caleandar-theme.css" afterPath="$PROJECT_DIR$/css/caleandar-theme.css" />
+      <change beforePath="$PROJECT_DIR$/js/caleandar.min.js" afterPath="$PROJECT_DIR$/js/caleandar.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="caleandar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/caleandar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="380" column="76" lean-forward="true" selection-start-line="380" selection-start-column="76" selection-end-line="380" selection-end-column="76" />
+            <state relative-caret-position="391">
+              <caret line="386" column="45" lean-forward="true" selection-start-line="386" selection-start-column="45" selection-end-line="386" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <marker date="1518447276079" expanded="true" signature="3919:3957" ph="..." />
@@ -40,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="caleandar-theme.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="caleandar-theme.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/caleandar-theme.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -60,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="caleandar.min.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="caleandar.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/caleandar.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
@@ -98,11 +97,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/demo.css" />
-        <option value="$PROJECT_DIR$/js/caleandar.min.js" />
         <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/caleandar.js" />
         <option value="$PROJECT_DIR$/css/caleandar-theme.css" />
+        <option value="$PROJECT_DIR$/js/caleandar.min.js" />
       </list>
     </option>
   </component>
@@ -113,7 +112,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -201,15 +200,15 @@
       <option name="presentableId" value="Default" />
       <updated>1518425856219</updated>
       <workItem from="1518425858691" duration="11133000" />
-      <workItem from="1518596120490" duration="654000" />
+      <workItem from="1518596120490" duration="747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11787000" />
+    <option name="totallyTimeSpent" value="11880000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -291,33 +290,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/demo.js" />
     <entry file="file://$PROJECT_DIR$/css/theme1.css" />
-    <entry file="file://$PROJECT_DIR$/js/caleandar.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="113" lean-forward="false" selection-start-line="39" selection-start-column="113" selection-end-line="39" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/caleandar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="380" column="76" lean-forward="true" selection-start-line="380" selection-start-column="76" selection-end-line="380" selection-end-column="76" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1518447276079" expanded="true" signature="3919:3957" ph="..." />
-            <marker date="1518447276079" expanded="true" signature="5286:5324" ph="..." />
-            <marker date="1518447276079" expanded="true" signature="8459:8497" ph="..." />
-            <marker date="1518447276079" expanded="true" signature="9925:9963" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -333,6 +310,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/caleandar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="386" column="45" lean-forward="true" selection-start-line="386" selection-start-column="45" selection-end-line="386" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1518447276079" expanded="true" signature="3919:3957" ph="..." />
+            <marker date="1518447276079" expanded="true" signature="5286:5324" ph="..." />
+            <marker date="1518447276079" expanded="true" signature="8459:8497" ph="..." />
+            <marker date="1518447276079" expanded="true" signature="9925:9963" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/caleandar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="113" lean-forward="false" selection-start-line="39" selection-start-column="113" selection-end-line="39" selection-end-column="113" />
           <folding />
         </state>
       </provider>
