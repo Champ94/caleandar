@@ -1,5 +1,5 @@
 .cld-main {
-    width: 560px;
+    max-width: 560px;
 }
 
 .cld-main a {
@@ -9,7 +9,7 @@
 
 .cld-datetime {
     position: relative;
-    width: 560px;
+    max-width: 560px;
     margin: auto;
     overflow: hidden;
     height: 50px;
