@@ -85,7 +85,7 @@
     height: 60px;
 }
 
-.cld-day .current-day .cld-number {
+.cld-day.current-day .cld-number {
     display: inline-block;
     height: 45px;
     width: 45px;
