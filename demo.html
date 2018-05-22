@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Caleandar demo with custom style</title>
+
+<head>
+    <title>Lightweight calendar demo with custom style</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/caleandar-theme.css"/>
-  </head>
-  <body>
-    <div id="caleandar">
+    <link rel="stylesheet" href="css/calendar-theme.css"/>
+</head>
 
-    </div>
+<body>
 
-    <script type="text/javascript" src="js/caleandar.js"></script>
-    <script>
-        var events = [
-            {
-                'Date': new Date(2018, 1, 12),
-                'Title': ['Evento1'],
-                Link: [
-                    '#linkEvento1'
-                ]
-            },
-            {
-                'Date': new Date(2018, 1, 7),
-                'Title': ['Evento1', 'Evento2', 'Evento3'],
-                Link: [
-                    '#linkEvento1',
-                    '#linkEvento2',
-                    '#linkEvento3'
-                ]
-            },
-            {
-                'Date': new Date(2018, 1, 14),
-                'Title': ['Evento1', 'Evento2'],
-                Link: [
-                    '#linkEvento1',
-                    function() {
-                        alert("Click on Evento2!");
-                    },
-                ]
-            }
-        ];
+<div id="calendar"></div>
 
-        var settings = {};
-        var element = document.getElementById('caleandar');
-        caleandar(element, events, settings);
-    </script>
-  </body>
+<script type="text/javascript" src="js/lw-calendar.js"></script>
+
+<script>
+    let events = [
+        {
+            eventDate: new Date(2018, 4, 1),
+            title: ['Event One'],
+            link: [
+                '#linkEvent1'
+            ]
+        },
+        {
+            eventDate: new Date(2018, 4, 7),
+            title: ['Event Two'],
+            link: [
+                '#linkEvent2'
+            ]
+        },
+        {
+            eventDate: new Date(2018, 4, 12),
+            title: ['Event Three', 'Event Four', 'Event Five'],
+            link: [
+                '#linkEvent3',
+                '#linkEvent4',
+                '#linkEvent5'
+            ]
+        },
+        {
+            eventDate: new Date(2018, 4, 26),
+            title: ['Event Six', 'Event Seven'],
+            link: [
+                '#linkEvent6',
+                '#linkEvent7'
+            ]
+        }
+    ];
+
+    let settings = {
+        disabledDays: [],
+        headerContainer: '',
+        showHeader: true,
+        showNav: true,
+    };
+
+    let element = document.getElementById('calendar');
+
+    initLwCalendar(element, events, settings);
+</script>
+</body>
 </html>

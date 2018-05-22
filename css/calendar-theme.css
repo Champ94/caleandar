@@ -45,17 +45,14 @@
     fill: #666;
 }
 
-.cld-rwd {
+.cld-left  {
     float: left;
     margin-left: 10px;
 }
 
-.cld-fwd {
+.cld-right {
     float: right;
     right: 10px;
-}
-.cld-nav svg:hover{
-
 }
 
 .cld-labels {
@@ -88,7 +85,7 @@
     height: 60px;
 }
 
-.cld-day.today .cld-number {
+.cld-day .current-day .cld-number {
     display: inline-block;
     height: 45px;
     width: 45px;
@@ -107,11 +104,11 @@
     color: #fff;
 }
 
-.cld-day .disableDay {
+.cld-day .disabled-day {
     opacity: 0.5;
 }
 
-.cld-day.nextMonth, .cld-day.prevMonth {
+.cld-day.next-month, .cld-day.prev-month {
     opacity: 0.33;
 }
 
@@ -120,12 +117,12 @@
     line-height: 45px;
 }
 
-.cld-title {
+.event-box {
     position: absolute;
     z-index: 5;
     display: none;
     top: 0;
-    left: 60px;
+    left: 45px;
     padding: 5px 10px;
     background: #fff;
     white-space: nowrap;
@@ -134,11 +131,11 @@
     width: 220px;
 }
 
-.cld-number:hover .cld-title {
+.cld-number:hover .event-box {
     display: block;
 }
 
-.cld-title::before {
+.event-box::before {
     content: '';
     position: absolute;
     top: 15px;
@@ -150,20 +147,20 @@
     border-right: 6px solid darkgrey;
 }
 
-.cld-title a {
+.event-box a {
     color: #005DAA;
     display: block;
     line-height: 35px;
     font-size: 15px;
 }
 
-.cld-number.eventday {
+.cld-number.event-day {
     display: inline-block;
     height: 45px;
     width: 45px;
 }
 
-.cld-number.eventday:active {
+.cld-number.event-day:active {
     display: inline-block;
     height: 45px;
     width: 45px;
@@ -171,7 +168,7 @@
     border: 1px solid #005DAA;
 }
 
-.cld-number.eventday::after {
+.cld-number.event-day::after {
     background-color: #FCC100;
     height: 6px;
     width: 6px;
@@ -182,10 +179,10 @@
     right: calc(50% - 3px);
 }
 
-.cld-number.eventday:hover {
+.cld-number.event-day:hover {
     cursor: pointer;
 }
 
-.today .cld-number.eventday:hover {
+.today .cld-number.event-day:hover {
 
 }
