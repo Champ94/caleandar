@@ -34,7 +34,7 @@ Example with multiple events on the same day.
 let events = [
     {
         eventDate: new Date(yyyy, mm, dd),
-        title: ['Event One', 'Evento Two'],
+        title: ['Event One', 'Event Two'],
         link: [
             '#linkEventOne',
             '#linkEventTwo',
@@ -62,6 +62,6 @@ let options = {
         showHeader: true,                       // Bool: show current date
         showNav: true,                          // Bool: show arrows for navigation
         // Events
-        events: events,                         // Array of objects: list of events to add into the calendar
+        events: function() {},                  // Function: return a new list of events to load
 };
 ```

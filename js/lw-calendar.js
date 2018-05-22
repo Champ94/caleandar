@@ -32,7 +32,7 @@ lwCalendar = function(events, options, date) {
         showHeader: true,                       // Bool: show current date
         showNav: true,                          // Bool: show arrows for navigation
         // Events
-        events: events,                         // Array of objects: list of events to add into the calendar
+        loadNewEvents: () => events,            // Function: return a new list of events to load
     };
 
     // Check for matches in properties and overwrites default values;
@@ -111,6 +111,9 @@ function createCalendar(calendar, element, adjuster) {
 
             // Add a listener to create a new calendar with adjuster on left navigation click
             leftArrowContainer.addEventListener('click', function() {
+                if (typeof calendar.options.loadNewEvents === 'function') {
+                    calendar.events = calendar.options.loadNewEvents();
+                }
                 createCalendar(calendar, element, -1);
             });
 
@@ -132,6 +135,9 @@ function createCalendar(calendar, element, adjuster) {
 
             // Add a listener to create a new calendar with adjuster on right navigation click
             rightArrowContainer.addEventListener('click', function() {
+                if (typeof calendar.options.loadNewEvents === 'function') {
+                    calendar.events = calendar.options.loadNewEvents();
+                }
                 createCalendar(calendar, element, 1);
             });
 

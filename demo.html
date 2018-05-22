@@ -12,6 +12,8 @@
 
 <div id="calendar"></div>
 
+<div id="header"></div>
+
 <script type="text/javascript" src="js/lw-calendar.js"></script>
 
 <script>
@@ -54,6 +56,39 @@
         headerContainer: '',
         showHeader: true,
         showNav: true,
+        loadNewEvents: () => [
+                {
+                    eventDate: new Date(2018, 5, 1),
+                    title: ['Event One'],
+                    link: [
+                        '#linkEvent1'
+                    ]
+                },
+                {
+                    eventDate: new Date(2018, 5, 7),
+                    title: ['Event Two'],
+                    link: [
+                        '#linkEvent2'
+                    ]
+                },
+                {
+                    eventDate: new Date(2018, 5, 12),
+                    title: ['Event Three', 'Event Four', 'Event Five'],
+                    link: [
+                        '#linkEvent3',
+                        '#linkEvent4',
+                        '#linkEvent5'
+                    ]
+                },
+                {
+                    eventDate: new Date(2018, 5, 26),
+                    title: ['Event Six', 'Event Seven'],
+                    link: [
+                        '#linkEvent6',
+                        '#linkEvent7'
+                    ]
+                }
+            ],
     };
 
     let element = document.getElementById('calendar');
