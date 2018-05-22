@@ -31,7 +31,7 @@ Where `element` is an HTML element, `events` is an array of event objects and `s
 An array of event objects to be placed on their respective dates on the calendar.
 Example with multiple events on the same day.
 ```
-var events = [
+let events = [
     {
         eventDate: new Date(yyyy, mm, dd),
         title: ['Event One', 'Evento Two'],
@@ -54,7 +54,7 @@ var events = [
 ### Settings
 Below are all the possible settings attributes with example values.
 ```
-options = {
+let options = {
         // Style options
         disabledDays: [],                       // Array of numbers: days of the week to be slightly transparent (days go from 0 to 6)
         // Header options
