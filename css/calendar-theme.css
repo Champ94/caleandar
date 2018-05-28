@@ -97,11 +97,12 @@
 
 .not-current-today {
     display: inline-block;
-    height: 20px;
-    width: 20px;
     border-radius: 50px;
-    background: #666;
-    color: #fff;
+    background: #666666;
+    color: #ffffff;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
 }
 
 .cld-day.disabled-day {
